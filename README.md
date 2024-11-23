@@ -1,1 +1,1 @@
-# Games (about:blank)
+# Games Blank Mode
