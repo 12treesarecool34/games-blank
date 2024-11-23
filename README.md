@@ -1,1 +1,1 @@
-# games-blank
+# Games (about:blank)
