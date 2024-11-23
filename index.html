@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Games (about:blank) - Tree</title>
+    <link rel="icon" type="image/png" href="./Tree.png">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #000;
+            color: #fff;
+            font-family: 'Roboto', sans-serif;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Redirecting to Games...</h1>
+    <script>
+        const url = "https://12treesarecool34.github.io/games";
+        const newWindow = window.open('about:blank', '_blank');
+        if (newWindow) {
+            newWindow.document.write(`
+                <html><head><title>Games - Tree</title></head>
+                <body style="margin:0;padding:0;height:100vh;overflow:hidden;">
+                <iframe src="${url}" style="border:none;width:100vw;height:100vh;" allowfullscreen></iframe>
+                </body></html>
+            `);
+            newWindow.document.close();
+        } else {
+            document.body.innerHTML = "<h1>Failed to open new window. Please check your browser settings.</h1>";
+        }
+    </script>
+</body>
+</html>
